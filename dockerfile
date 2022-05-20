@@ -5,7 +5,8 @@ RUN apk -U --no-cache add \
     mkdir -p /spidertrap
 
 COPY spidertrap.py /spidertrap
+COpY log.py /spidertrap
 
-# Start wordpot
+# Start spidertrap
 STOPSIGNAL SIGINT
-CMD ["/usr/bin/python3","spidertrap.py"
+CMD ["/usr/bin/python3","log.py"]
