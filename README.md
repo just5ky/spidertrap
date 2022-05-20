@@ -1,4 +1,4 @@
-# spidertrap
+# spidertrap docker
 Traps web crawlers
 
 `docker run --rm --name spidertrap -p 80:80 justsky/spidertrap`
