@@ -18,3 +18,10 @@ services:
     port:
       - 80:80
 ```
+#
+### Build it yourself
+- Clone this Repo
+- Inside the repo, run this
+ ```sh
+ docker build -t spidertrap .
+ ```
