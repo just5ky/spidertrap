@@ -4,7 +4,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 def log_popen_pipe(p, stdfile):
 
-    with open("/var/log/spidertrap", "spidertrap.log", "w") as f:
+    with open("/var/log/spidertrap", "spidertrap.txt", "w") as f:
 
         while p.poll() is None:
             f.write(stdfile.readline())
