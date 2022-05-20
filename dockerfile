@@ -3,7 +3,6 @@ FROM alpine
 RUN apk -U --no-cache add \
             python3 \
     mkdir -p /spidertrap && /
-    cd /spidertrap
 
 COPY spidertrap.py /spidertrap
 
@@ -14,5 +13,6 @@ COPY spidertrap.py /spidertrap
 
 # Start wordpot
 STOPSIGNAL SIGINT
+WORKDIR /spidertrap
 USER spidertrap:spidertrap
 CMD ["/usr/bin/python3","spidertrap.py"
