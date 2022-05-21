@@ -29,7 +29,7 @@ You should see a page containing randomly generated links. If
 you click on a link it will take you to a page with more randomly
 generated links.
 
-Logs will be saved in spidertrap.log
+Logs will be saved in spidertrap.log with Apache common log format
 
 ```log
 1.2.3.4 - - [21/May/2022 09:59:55] "GET /yf/XhuQwxZqdZwFG_6_U HTTP/1.1" 200 -
