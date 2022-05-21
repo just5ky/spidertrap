@@ -2,7 +2,7 @@ FROM alpine
 
 RUN apk -U --no-cache add \
             python3 && \
-    mkdir -p /spidertrap
+    mkdir -p /spidertrap && cd /spidertrap && mkdir -p /log
 
 COPY spidertrap.py /spidertrap
 COPY log.py /spidertrap
