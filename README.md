@@ -31,6 +31,11 @@ generated links.
 
 Logs will be saved in spidertrap.log
 
+```log
+1.2.3.4 - - [21/May/2022 09:59:55] "GET /yf/XhuQwxZqdZwFG_6_U HTTP/1.1" 200 -
+1.2.3.4 - - [21/May/2022 09:59:56] "GET /favicon.ico HTTP/1.1" 200 -
+```
+
 Trapping a Wget Spider
 --------------------
 
