@@ -62,4 +62,3 @@ Build it yourself
  ```sh
  docker build -t spidertrap .
  ```
-
