@@ -1,12 +1,20 @@
-# Spidertrap dockerized
+# [Spidertrap](https://github.com/adhdproject/spidertrap) dockerized
 Trap web crawlers and spiders in an infinite set of dynamically
 generated webpages.
 
-Install and run
+## Install and run
 ---
+
+#### Using dockerhub image
 `docker run --rm --name spidertrap -v .:/log/ -p 80:80 justsky/spidertrap`
 
+#### Using github container repo image
+
+`docker run --rm --name spidertrap -v .:/log/ -p 80:80 ghcr.io/just5ky/spidertrap:latest`
+
 OR
+
+#### Using docker-compose
 
 ```yml
 version "3"
@@ -29,6 +37,8 @@ You should see a page containing randomly generated links. If
 you click on a link it will take you to a page with more randomly
 generated links.
 
+## Logging
+---
 Logs will be saved in spidertrap.log with Apache common log format
 
 ```log
