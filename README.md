@@ -2,9 +2,24 @@
 Trap web crawlers and spiders in an infinite set of dynamically
 generated webpages.
 
+This is a fork of [ADHDproject/Spidertrap](https://github.com/adhdproject/spidertrap) with added logging.
+
+####  Supports multi-arch
+```sh
+╰─❯ docker run --rm mplatform/mquery justsky/spidertrap:latest
+Image: justsky/spidertrap:latest (digest: sha256:98b61a1853b966015197024d2c8c9e82edab5367ee51bd7f5503d445e367df84)
+ * Manifest List: Yes (Image type: application/vnd.docker.distribution.manifest.list.v2+json)
+ * Supported platforms:
+   - linux/amd64
+   - linux/arm64
+   - linux/arm/v7
+   - linux/386
+   - linux/ppc64le
+   - linux/s390x
+```
+
 ## Install and run
 ---
-
 #### Using dockerhub image
 `docker run --rm --name spidertrap -v .:/log/ -p 80:80 justsky/spidertrap`
 
