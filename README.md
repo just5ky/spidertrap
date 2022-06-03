@@ -2,6 +2,8 @@
 Trap web crawlers and spiders in an infinite set of dynamically
 generated webpages.
 
+![Docker Build](https://github.com/just5ky/spidertrap/workflows/Docker/badge.svg) ![Docker Pulls](https://img.shields.io/docker/pulls/justsky/spidertrap) ![Docker Size](https://img.shields.io/docker/image-size/justsky/spidertrap?color=orange)
+
 This is a fork of [ADHDproject/Spidertrap](https://github.com/adhdproject/spidertrap) with added logging.
 
 ####  Supports multi-arch
