@@ -2,7 +2,8 @@ name: Auto approve and merge PRs by dependabot
 
 # Trigger the workflow on pull request
 on:
-  pull_request
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   autoapprove:
