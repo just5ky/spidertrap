@@ -1,4 +1,4 @@
-FROM alpine:3.21
+FROM alpine
 
 RUN apk -U --no-cache add python3 && \
     mkdir -p /spidertrap /log
