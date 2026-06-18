@@ -52,11 +52,11 @@ Browse to `http://127.0.0.1` — each page renders randomly generated links that
 
 ## Logging
 
-Mount a host directory to `/log` and access logs are written to `spidertrap.log` in Apache Common Log Format:
+Mount a host directory to `/log` and access logs are written to `spidertrap.log` in Apache Combined Log Format:
 
 ```
-1.2.3.4 - - [21/May/2022 09:59:55] "GET /yf/XhuQwxZqdZwFG_6_U HTTP/1.1" 200 -
-1.2.3.4 - - [21/May/2022 09:59:56] "GET /favicon.ico HTTP/1.1" 200 -
+1.2.3.4 - - [21/May/2022 09:59:55] "GET /yf/XhuQwxZqdZwFG_6_U HTTP/1.1" 200 - "https://example.com/" "Mozilla/5.0 (compatible; Googlebot/2.1)"
+1.2.3.4 - - [21/May/2022 09:59:56] "GET /favicon.ico HTTP/1.1" 200 - "-" "wget/1.21.3"
 ```
 
 Logs also stream to stdout (visible via `docker logs spidertrap`).

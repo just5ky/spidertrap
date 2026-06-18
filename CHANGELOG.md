@@ -4,8 +4,6 @@ All notable changes to this project will be documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## [Unreleased]
-
 ### Planned
 - ENV var configuration
 - CLI flags (`--port`, `--delay`, `--file`)
@@ -18,6 +16,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Changed
 - Merged `log.py` into `spidertrap.py` — eliminated subprocess wrapper and its file-handle race condition
 - Integrated Python `logging` module: writes to stdout and `/log/spidertrap.log` with graceful fallback
+- Access logs now use Apache Combined Log Format (adds `Referer` and `User-Agent` fields)
 - Renamed `dockerfile` → `Dockerfile` (standard casing)
 - Fixed `actions/checkout` action version in CI
 - Fixed invalid Docker Compose YAML in README

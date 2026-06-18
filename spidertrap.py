@@ -77,6 +77,22 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(self.generate_page(self.path).encode())
 
+    def log_request(self, code="-", size="-"):
+        if hasattr(code, "value"):
+            code = code.value
+        referer = self.headers.get("Referer", "-")
+        ua = self.headers.get("User-Agent", "-")
+        logger.info(
+            '%s - - [%s] "%s" %s %s "%s" "%s"',
+            self.address_string(),
+            self.log_date_time_string(),
+            self.requestline,
+            str(code),
+            str(size),
+            referer,
+            ua,
+        )
+
     def log_message(self, fmt, *args):
         logger.info(
             "%s - - [%s] %s",
